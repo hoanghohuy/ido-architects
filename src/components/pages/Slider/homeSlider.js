@@ -57,10 +57,10 @@ export default function HomeSlider() {
     <div id='slider'>
       <div className='px-[88px] pb-20 w-full lg:px-12 xs:px-0 xs:pb-0 '>
         <Slider {...settings} className='relative'>
-          <img src='/slider/slider_example.png' />
-          <img src='/slider/slider_example.png' />
-          <img src='/slider/slider_example.png' />
-          <img src='/slider/slider_example.png' />
+          <img loading='lazy' src='/slider/slider_example.png' />
+          <img loading='lazy' src='/slider/slider_example.png' />
+          <img loading='lazy' src='/slider/slider_example.png' />
+          <img loading='lazy' src='/slider/slider_example.png' />
         </Slider>
       </div>
     </div>

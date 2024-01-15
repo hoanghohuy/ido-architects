@@ -21,7 +21,7 @@ export default function Home() {
         <div id='info'>
           <div className='px-[88px] py-[56px] flex justify-between lg:px-[48px] md:flex-col xs:px-8 xs:py-8'>
             <div className='max-w-[60%] md:max-w-full'>
-              <div className='text-[54px] font-[400] xl:text-[42px] lg:text-[30px] xs:text-[14px]'>CÔNG TY TNHH THIẾT KẾ VÀ XÂY DỰNG</div>
+              <div className='text-[54px] font-[400] xl:text-[35px] lg:text-[30px] xs:text-[14px]'>CÔNG TY TNHH THIẾT KẾ VÀ XÂY DỰNG</div>
               <div className='text-[#F6831F] text-[78px] font-[500] xl:text-[60px] xs:text-[36px]'>IDO Architects</div> 
             </div>
             <div className='min-w-[333px] xl:min-w-[280px] xl:max-w-[280px] lg:min-w-220px md:max-w-full'>

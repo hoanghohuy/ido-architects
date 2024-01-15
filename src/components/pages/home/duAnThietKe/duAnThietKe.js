@@ -39,22 +39,22 @@ export default function DuAnThietKe() {
                       <TabPanel value="1" className='px-0'>
                           <div className='flex flex-wrap xs:flex-col xs:gap-6'>
                             <div className='basis-[33.333333%] px-1 py-1 xs:basis-1'>
-                              <img className='object-cover' src='/Home/A/tab_example.png'/>
+                              <img loading='lazy' className='object-cover' src='/Home/A/tab_example.png'/>
                             </div>
                             <div className='basis-[33.333333%] px-1 py-1 xs:basis-1'>
-                              <img className='object-cover' src='/Home/A/tab_example.png'/>
+                              <img loading='lazy' className='object-cover' src='/Home/A/tab_example.png'/>
                             </div>
                             <div className='basis-[33.333333%] px-1 py-1 xs:basis-1'>
-                              <img className='object-cover' src='/Home/A/tab_example.png'/>
+                              <img loading='lazy' className='object-cover' src='/Home/A/tab_example.png'/>
                             </div>
                             <div className='basis-[33.333333%] px-1 py-1 xs:basis-1'>
-                              <img className='object-cover' src='/Home/A/tab_example.png'/>
+                              <img loading='lazy' className='object-cover' src='/Home/A/tab_example.png'/>
                             </div>
                             <div className='basis-[33.333333%] px-1 py-1 xs:basis-1'>
-                              <img className='object-cover' src='/Home/A/tab_example.png'/>
+                              <img loading='lazy' className='object-cover' src='/Home/A/tab_example.png'/>
                             </div>
                             <div className='basis-[33.333333%] px-1 py-1 xs:basis-1'>
-                              <img className='object-cover' src='/Home/A/tab_example.png'/>
+                              <img loading='lazy' className='object-cover' src='/Home/A/tab_example.png'/>
                             </div>
                           </div>
                       </TabPanel>
