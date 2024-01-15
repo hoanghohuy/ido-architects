@@ -9,8 +9,8 @@ export default function HomeC() {
     };
   return (
     <div>
-        <div className='px-[88px] pt-16 flex justify-between lg:px-12 md:flex-col md:max-w-full md:gap-12 xs:px-8'>
-            <div className='max-w-[40%] text-[38px] text-primary font-[500] leading-[38px] md:max-w-full'>
+        <div className='px-[88px] py-10 flex justify-between lg:px-12 md:flex-col md:max-w-full md:gap-12 xs:px-8 xs:gap-4'>
+            <div className='max-w-[40%] text-[38px] text-primary font-[500] leading-[38px] md:max-w-full xs:text-[24px] xs:leading-none'>
                 IDO Architects cung cấp đầy đủ dịch vụ trong lĩnh vực kiến trúc và thiết kế nội thất.
             </div>
             <div className='max-w-[50%] md:max-w-full'>
@@ -34,7 +34,7 @@ export default function HomeC() {
                                 onChange={handleChange(item.id)}
                             >
                                 <AccordionSummary
-                                    sx={{borderBottom: '1px solid #111'}}
+                                    sx={{borderBottom: '1px solid #111', padding: '0'}}
                                     key={item.id}
                                     expandIcon={
                                         <>
@@ -46,7 +46,7 @@ export default function HomeC() {
                                     aria-controls="panel1d-content"
                                     id="panel1d-header"
                                 >
-                                    <div className='pr-4 text-primary font-[600]'>
+                                    <div className='pr-4 text-primary font-[600] xs:pr-1'>
                                         {item.id}
                                     </div>
                                     <div className='text-[30px] font-[500] xs:text-[20px]'>

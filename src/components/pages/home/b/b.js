@@ -3,7 +3,7 @@ import React from 'react'
 export default function HomeB() {
   return (
     <div>
-        <div className='w-full px-[88px] flex justify-between lg:px-12 md:flex-col md:gap-20 xs:px-8'>
+        <div className='w-full px-[88px] flex justify-between lg:px-12 md:flex-col md:gap-20 xs:px-8 xs:gap-8'>
             <div className='max-w-[50%] flex flex-col gap-12 md:max-w-full xs:gap-4'>
                 <div className='flex justify-between gap-20 lg:gap-10 xs:flex-col xs:gap-4'>
                     <div className='text-[64px] text-primary font-[500] min-w-[40%] leading-[64px] lg:text-[40px] lg:leading-10'>
@@ -30,7 +30,7 @@ export default function HomeB() {
                         06
                     </div>
                     <div className='min-w-[290px] xs:min-w-full'>
-                        <div className='text-[30px] font-[500]'>
+                        <div className='text-[30px] font-[500] xs:text-[22px]'>
                             Năm kinh nghiệm trong lĩnh vực kiến trúc và nội thất.
                         </div>
                         <div>
