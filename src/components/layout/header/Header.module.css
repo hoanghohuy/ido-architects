@@ -1,0 +1,12 @@
+.active {
+    color: var(--primary-color);
+}
+
+.active::after {
+    margin-top: 4px;
+    width: 40px;
+    height: 2px;
+    content: '';
+    display: block;
+    background-color: var(--primary-color);
+}
