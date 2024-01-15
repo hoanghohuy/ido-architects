@@ -18,8 +18,8 @@ export default function ProjectCompleted() {
       <div className='max-w-[1152px] mx-auto py-16 flex flex-col gap-14 lg:px-[48px] md:px-8 xs:gap-8'>
         <div className='text-[48px] text-center font-[400] xs:text-[40px] xs:text-left'>Hình ảnh hoàn thiện</div>
         <div className='flex flex-wrap xs:flex-col xs:gap-8'>
-          {data.map(item => 
-            <a href={`/project-completed/${item.link}`} className='basis-[33.33%] flex flex-col gap-4 pb-14 px-4 md:basis-[50%] xs:basis-0 xs:pb-0 xs:px-0 '>
+          {data && data.map(item => 
+            <a key={item.id} href={`/project-completed/${item.link}`} className='basis-[33.33%] flex flex-col gap-4 pb-14 px-4 md:basis-[50%] xs:basis-0 xs:pb-0 xs:px-0 '>
                 <img src='/project-completed/hoanthien.png' />
                 <div className='flex flex-col gap-2'>
                   <div className='text-[20px] font-[500]'>{item.name}</div>
