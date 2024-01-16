@@ -2,6 +2,7 @@
 import { Tab, Tabs } from '@mui/material'
 import { useState } from 'react'
 import { TabContext, TabPanel } from '@mui/lab';
+import Link from 'next/link';
 
 export default function DuAnThietKe() {
 
@@ -11,7 +12,7 @@ export default function DuAnThietKe() {
         setValue(newValue);
     };
   return (
-    <div className='pt-[88px]'>
+    <div className='pt-[88px] lg:px-12'>
         <div className='max-w-[1152px] mx-auto xs:py-0 xs:px-8'>
             <div className='text-center flex flex-col gap-2 xs:text-left'>
                 <div className='text-[48px] font-[400] xs:leading-none'>Các dự án đã thiết kế</div>
@@ -36,30 +37,30 @@ export default function DuAnThietKe() {
                         <Tab sx={{width: 'unset', flexGrow: 0, padding: '0', textTransform: 'none', fontFamily: 'unset'}} label="Coffee" value="6" />
                         <Tab sx={{width: 'unset', flexGrow: 0, padding: '0', textTransform: 'none', fontFamily: 'unset'}} label="Hotel" value="7" />
                     </Tabs>
-                      <TabPanel value="1" className='px-0'>
+                      <TabPanel sx={{padding: ' 12px 0'}} value="1" className='px-0'>
                           <div className='flex flex-wrap xs:flex-col xs:gap-6'>
-                            <div className='basis-[33.333333%] px-1 py-1 xs:basis-1'>
+                            <Link href={'/project/test'} className='basis-[33.333333%] px-1 py-1 xs:basis-1'>
                               <img loading='lazy' className='object-cover' src='/Home/A/tab_example.png'/>
-                            </div>
-                            <div className='basis-[33.333333%] px-1 py-1 xs:basis-1'>
+                            </Link>
+                            <Link href={'/project/test'} className='basis-[33.333333%] px-1 py-1 xs:basis-1'>
                               <img loading='lazy' className='object-cover' src='/Home/A/tab_example.png'/>
-                            </div>
-                            <div className='basis-[33.333333%] px-1 py-1 xs:basis-1'>
+                            </Link>
+                            <Link href={'/project/test'} className='basis-[33.333333%] px-1 py-1 xs:basis-1'>
                               <img loading='lazy' className='object-cover' src='/Home/A/tab_example.png'/>
-                            </div>
-                            <div className='basis-[33.333333%] px-1 py-1 xs:basis-1'>
+                            </Link>
+                            <Link href={'/project/test'} className='basis-[33.333333%] px-1 py-1 xs:basis-1'>
                               <img loading='lazy' className='object-cover' src='/Home/A/tab_example.png'/>
-                            </div>
-                            <div className='basis-[33.333333%] px-1 py-1 xs:basis-1'>
+                            </Link>
+                            <Link href={'/project/test'} className='basis-[33.333333%] px-1 py-1 xs:basis-1'>
                               <img loading='lazy' className='object-cover' src='/Home/A/tab_example.png'/>
-                            </div>
-                            <div className='basis-[33.333333%] px-1 py-1 xs:basis-1'>
+                            </Link>
+                            <Link href={'/project/test'} className='basis-[33.333333%] px-1 py-1 xs:basis-1'>
                               <img loading='lazy' className='object-cover' src='/Home/A/tab_example.png'/>
-                            </div>
+                            </Link>
                           </div>
                       </TabPanel>
                       <TabPanel value="2">
-                          zzzzz
+                          'Example'
                       </TabPanel>
                     </TabContext>
                 </div>

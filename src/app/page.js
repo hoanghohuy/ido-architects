@@ -39,7 +39,8 @@ export default function Home() {
         <Divider char={'A'} />
         <DuAnThietKe />
         <div className='w-[100px] mx-auto mb-[90px]'>
-            <Link href={'project'} className='text-center'>Xem thêm</Link>
+            <Link href={'project'} className='text-center w-[100px] block'>Xem thêm</Link>
+            <div className='mx-auto w-[40px] h-[2px] bg-black'></div>
         </div>
         <Divider char={'B'} />
         <HomeB />
