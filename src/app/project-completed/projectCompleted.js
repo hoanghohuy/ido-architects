@@ -1,15 +1,15 @@
 import React from 'react'
 
 const data = [
-  {id: 1, name:'BOP’S Villa 2019', place: 'Thành phố Đà Nẵng', completedDate: '8/2019', link: '/test'},
-  {id: 2, name:'BOP’S Villa 2019', place: 'Thành phố Đà Nẵng', completedDate: '8/2019', link: '/test'},
-  {id: 3, name:'BOP’S Villa 2019', place: 'Thành phố Đà Nẵng', completedDate: '8/2019', link: '/test'},
-  {id: 4, name:'BOP’S Villa 2019', place: 'Thành phố Đà Nẵng', completedDate: '8/2019', link: '/test'},
-  {id: 5, name:'BOP’S Villa 2019', place: 'Thành phố Đà Nẵng', completedDate: '8/2019', link: '/test'},
-  {id: 6, name:'BOP’S Villa 2019', place: 'Thành phố Đà Nẵng', completedDate: '8/2019', link: '/test'},
-  {id: 7, name:'BOP’S Villa 2019', place: 'Thành phố Đà Nẵng', completedDate: '8/2019', link: '/test'},
-  {id: 8, name:'BOP’S Villa 2019', place: 'Thành phố Đà Nẵng', completedDate: '8/2019', link: '/test'},
-  {id: 9, name:'BOP’S Villa 2019', place: 'Thành phố Đà Nẵng', completedDate: '8/2019', link: '/test'},
+  {id: 1, name:'BOP’S Villa 2019', place: 'Thành phố Đà Nẵng', completedDate: '8/2019', link: 'test'},
+  {id: 2, name:'BOP’S Villa 2019', place: 'Thành phố Đà Nẵng', completedDate: '8/2019', link: 'test'},
+  {id: 3, name:'BOP’S Villa 2019', place: 'Thành phố Đà Nẵng', completedDate: '8/2019', link: 'test'},
+  {id: 4, name:'BOP’S Villa 2019', place: 'Thành phố Đà Nẵng', completedDate: '8/2019', link: 'test'},
+  {id: 5, name:'BOP’S Villa 2019', place: 'Thành phố Đà Nẵng', completedDate: '8/2019', link: 'test'},
+  {id: 6, name:'BOP’S Villa 2019', place: 'Thành phố Đà Nẵng', completedDate: '8/2019', link: 'test'},
+  {id: 7, name:'BOP’S Villa 2019', place: 'Thành phố Đà Nẵng', completedDate: '8/2019', link: 'test'},
+  {id: 8, name:'BOP’S Villa 2019', place: 'Thành phố Đà Nẵng', completedDate: '8/2019', link: 'test'},
+  {id: 9, name:'BOP’S Villa 2019', place: 'Thành phố Đà Nẵng', completedDate: '8/2019', link: 'test'},
 ]
 
 export default function ProjectCompleted() {
