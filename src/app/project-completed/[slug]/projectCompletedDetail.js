@@ -36,7 +36,7 @@ export default function ProjectCompletedDetail() {
                 <h1 className='text-[48px] font-[500]'>AEM Office Building</h1>
                 <div>
                     <div>Đi qua ngày mưa đông là ngày nắng đẹp!</div>
-                    <div> "Nắng + hình khối - cây xanh tạo chiều sâu bóng đổ làm tăng sự tương phản của công trình với môi trường xung quanh".</div>
+                    <div> &apos;Nắng + hình khối - cây xanh tạo chiều sâu bóng đổ làm tăng sự tương phản của công trình với môi trường xung quanh&apos;.</div>
                 </div>
                 <div>--------------------</div>
                 <div>
