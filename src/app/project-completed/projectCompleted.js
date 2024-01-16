@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const data = [
@@ -19,14 +20,14 @@ export default function ProjectCompleted() {
         <div className='text-[48px] text-center font-[400] xs:text-[40px] xs:text-left'>Hình ảnh hoàn thiện</div>
         <div className='flex flex-wrap xs:flex-col xs:gap-8'>
           {data && data.map(item => 
-            <a key={item.id} href={`/project-completed/${item.link}`} className='basis-[33.33%] flex flex-col gap-4 pb-14 px-4 md:basis-[50%] xs:basis-0 xs:pb-0 xs:px-0 '>
+            <Link key={item.id} href={`/project-completed/${item.link}`} className='basis-[33.33%] flex flex-col gap-4 pb-14 px-4 md:basis-[50%] xs:basis-0 xs:pb-0 xs:px-0 '>
                 <img src='/project-completed/hoanthien.png' loading='lazy' />
                 <div className='flex flex-col gap-2'>
                   <div className='text-[20px] font-[500]'>{item.name}</div>
                   <div className='text-[16px] font-[500]'>Địa điểm: {item.place}</div>
                   <div className='text-[16px] font-[500]'>Hoàn thành: {item.completedDate}</div>
                 </div>
-            </a>
+            </Link>
             )}
           <div>
           </div>
