@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <main>
       <Header currentLink={pathName}/>
-      <div className='main'>
+      <div className='main pt-[88px]'>
         <div id='info'>
           <div className='px-[88px] py-[56px] flex justify-between lg:px-[48px] md:flex-col xs:px-8 xs:py-8'>
             <div className='max-w-[60%] md:max-w-full'>

@@ -14,7 +14,7 @@ const data = [
 
 export default function ProjectCompleted() {
   return (
-    <div id='hinhanhhoanthien'>
+    <div id='hinhanhhoanthien' className='pt-[88px]'>
       <div className='max-w-[1152px] mx-auto py-16 flex flex-col gap-14 lg:px-[48px] md:px-8 xs:gap-8'>
         <div className='text-[48px] text-center font-[400] xs:text-[40px] xs:text-left'>Hình ảnh hoàn thiện</div>
         <div className='flex flex-wrap xs:flex-col xs:gap-8'>
