@@ -12,7 +12,7 @@ export default function DuAnThietKe() {
     };
   return (
     <div className='pt-[88px]'>
-        <div className='max-w-[1152px] mx-auto py-[80px] xs:py-0 xs:px-8'>
+        <div className='max-w-[1152px] mx-auto xs:py-0 xs:px-8'>
             <div className='text-center flex flex-col gap-2 xs:text-left'>
                 <div className='text-[48px] font-[400] xs:leading-none'>Các dự án đã thiết kế</div>
                 <div className='text-[18px] font-[400]'>2018 - Present</div>

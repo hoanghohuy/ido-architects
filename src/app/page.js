@@ -11,6 +11,7 @@ import DuAnThietKe from '@/components/pages/home/duAnThietKe/duAnThietKe';
 import HomeB from '@/components/pages/home/b/b';
 import HomeC from '@/components/pages/home/c/c';
 import FooterHome from '@/components/layout/footer/footerHome';
+import Link from 'next/link';
 
 export default function Home() {
   const pathName = usePathname();
@@ -37,6 +38,9 @@ export default function Home() {
         <HomeSlider />
         <Divider char={'A'} />
         <DuAnThietKe />
+        <div className='w-[100px] mx-auto mb-[90px]'>
+            <Link href={'project'} className='text-center'>Xem thêm</Link>
+        </div>
         <Divider char={'B'} />
         <HomeB />
         <Divider char={'C'} />
