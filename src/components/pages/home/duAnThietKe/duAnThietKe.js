@@ -60,7 +60,7 @@ export default function DuAnThietKe() {
                           </div>
                       </TabPanel>
                       <TabPanel value="2">
-                          'Example'
+                          Example
                       </TabPanel>
                     </TabContext>
                 </div>
