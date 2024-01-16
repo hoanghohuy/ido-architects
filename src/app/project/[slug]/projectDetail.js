@@ -20,7 +20,7 @@ export default function ProjectDetail() {
             <div className='flex justify-between items-center md:flex-col md:gap-12'>
                 <div className='flex flex-wrap max-w-[60%] md:max-w-full sm:flex-col sm:w-full sm:gap-4'>
                     {[0,1,2,3,4,5].map(item => (
-                    <div onClick={() => handleShowImage('/detailProjectDetail.png')} className='w-full basis-[33.333%] p-1 aspect-[4/3] sm:basis-1'>
+                    <div key={item} onClick={() => handleShowImage('/detailProjectDetail.png')} className='w-full basis-[33.333%] p-1 aspect-[4/3] sm:basis-1'>
                         <img className='w-full h-full object-cover aspect-[4/3]' src='/detailProjectDetail.png' />
                     </div>
                     ))}
