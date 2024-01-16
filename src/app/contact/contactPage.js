@@ -31,7 +31,7 @@ export default function ContactPage() {
               Cung cấp các dịch vụ đa dạng trong lĩnh vực kiến trúc và thiết kế nội thất.
             </div>
             <div className='max-w-[50%] lg:max-w-full'>
-              <Grid container spacing={6}>
+              <Grid container spacing={5}>
                 <Grid item xl={6} lg={6} md={6} sm={12} xs={12}>
                     <TextField id="standard-basic" label="Họ và tên" variant="standard" fullWidth/>
                 </Grid>
