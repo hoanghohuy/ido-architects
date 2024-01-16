@@ -11,14 +11,14 @@ export const metadata = {
         url: `${process.env.NEXT_PUBLIC_SITE_URL}/project-completed`,
         type: 'website',
         description: 'Hình ảnh hoàn thiện',
-        images: [`${process.env.NEXT_PUBLIC_SITE_URL}/evissa_thumbnail.png`],
+        images: [`${process.env.NEXT_PUBLIC_SITE_URL}/thumbnail.png`],
     },
     twitter: {
         title: 'Hình ảnh hoàn thiện',
         description: 'News news',
         card: 'summary',
         url: `${process.env.NEXT_PUBLIC_SITE_URL}/project-completed`,
-        images: [`${process.env.NEXT_PUBLIC_SITE_URL}/evissa_thumbnail.png`],
+        images: [`${process.env.NEXT_PUBLIC_SITE_URL}/thumbnail.png`],
         site: '@idoarchitects',
         creator: '@idoarchitects',
     },
@@ -29,7 +29,7 @@ export default function page() {
         '@context': 'https://schema.org',
         '@type': 'article',
         name: 'Hình ảnh hoàn thiện',
-        image: `${process.env.NEXT_PUBLIC_SITE_URL}/evissa_thumbnail.png`,
+        image: `${process.env.NEXT_PUBLIC_SITE_URL}/thumbnail.png`,
         description: `Hình ảnh hoàn thiện`,
     };
     return (

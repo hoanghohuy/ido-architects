@@ -2,23 +2,23 @@ import ContactPage from "./contactPage";
 
 export const metadata = {
     title: {
-        default: 'Contact',
+        default: 'Liên hệ - Ido-architects.com',
     },
-    description: 'Contact',
-    keywords: 'Contact',
+    description: 'Liên hệ',
+    keywords: 'Liên hệ',
     openGraph: {
-        title: 'Contact',
+        title: 'Liên hệ - Ido-architects.com',
         url: `${process.env.NEXT_PUBLIC_SITE_URL}/project`,
         type: 'website',
-        description: 'Contact',
-        images: [`${process.env.NEXT_PUBLIC_SITE_URL}/evissa_thumbnail.png`],
+        description: 'Liên hệ',
+        images: [`${process.env.NEXT_PUBLIC_SITE_URL}/thumbnail.png`],
     },
     twitter: {
-        title: 'Contact',
-        description: 'Contact',
+        title: 'Liên hệ - Ido-architects.com',
+        description: 'Liên hệ',
         card: 'summary',
         url: `${process.env.NEXT_PUBLIC_SITE_URL}/project`,
-        images: [`${process.env.NEXT_PUBLIC_SITE_URL}/evissa_thumbnail.png`],
+        images: [`${process.env.NEXT_PUBLIC_SITE_URL}/thumbnail.png`],
         site: '@idoarchitects',
         creator: '@idoarchitects',
     },
@@ -29,7 +29,7 @@ export default function page() {
         '@context': 'https://schema.org',
         '@type': 'article',
         name: 'News | E-vissa.com',
-        image: `${process.env.NEXT_PUBLIC_SITE_URL}/evissa_thumbnail.png`,
+        image: `${process.env.NEXT_PUBLIC_SITE_URL}/thumbnail.png.png`,
         description: `News | E-vissa.com`,
     };
     return (

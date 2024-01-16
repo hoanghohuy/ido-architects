@@ -10,7 +10,7 @@ export default function HomeC() {
   return (
     <div>
         <div className='px-[88px] py-10 flex justify-between lg:px-12 md:flex-col md:max-w-full md:gap-12 xs:px-8 xs:gap-4'>
-            <div className='max-w-[40%] text-[38px] text-primary font-[500] leading-[38px] md:max-w-full xs:text-[24px] xs:leading-none'>
+            <div className='max-w-[40%] text-[38px] text-primary font-[500] leading-[40px] md:max-w-full xs:text-[24px] xs:leading-none'>
                 IDO Architects cung cấp đầy đủ dịch vụ trong lĩnh vực kiến trúc và thiết kế nội thất.
             </div>
             <div className='max-w-[50%] md:max-w-full'>

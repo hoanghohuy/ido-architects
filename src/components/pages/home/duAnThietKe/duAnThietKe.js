@@ -22,7 +22,7 @@ export default function DuAnThietKe() {
                     <Tabs
                         value={value}
                         onChange={handleChangeTab}
-                        indicatorColor="secondary"
+                        indicatorColor="red"
                         textColor="inherit"
                         centered
                         sx={{minHeight: '34px', '& .MuiTabs-flexContainer': {justifyContent: 'center'}}}
@@ -39,28 +39,80 @@ export default function DuAnThietKe() {
                     </Tabs>
                       <TabPanel sx={{padding: ' 12px 0'}} value="1" className='px-0'>
                           <div className='flex flex-wrap xs:flex-col xs:gap-6'>
-                            <Link href={'/project/test'} className='basis-[33.333333%] px-1 py-1 xs:basis-1'>
-                              <img loading='lazy' className='object-cover' src='/Home/A/tab_example.png'/>
+                            {
+                              [1,2,3,4,5,6,7,8,9].map(item => (
+                            <Link key={item} href={'/project/test'} className='basis-[33.333333%] px-1 py-1 xs:basis-1'>
+                              <img loading='lazy' className='object-cover w-full h-full' src={`Gallery/${item}.png`}/>
                             </Link>
-                            <Link href={'/project/test'} className='basis-[33.333333%] px-1 py-1 xs:basis-1'>
-                              <img loading='lazy' className='object-cover' src='/Home/A/tab_example.png'/>
-                            </Link>
-                            <Link href={'/project/test'} className='basis-[33.333333%] px-1 py-1 xs:basis-1'>
-                              <img loading='lazy' className='object-cover' src='/Home/A/tab_example.png'/>
-                            </Link>
-                            <Link href={'/project/test'} className='basis-[33.333333%] px-1 py-1 xs:basis-1'>
-                              <img loading='lazy' className='object-cover' src='/Home/A/tab_example.png'/>
-                            </Link>
-                            <Link href={'/project/test'} className='basis-[33.333333%] px-1 py-1 xs:basis-1'>
-                              <img loading='lazy' className='object-cover' src='/Home/A/tab_example.png'/>
-                            </Link>
-                            <Link href={'/project/test'} className='basis-[33.333333%] px-1 py-1 xs:basis-1'>
-                              <img loading='lazy' className='object-cover' src='/Home/A/tab_example.png'/>
-                            </Link>
+                              ))
+                            }
                           </div>
                       </TabPanel>
-                      <TabPanel value="2">
-                          Example
+                      <TabPanel sx={{padding: ' 12px 0'}} value="2">
+                          <div className='flex flex-wrap xs:flex-col xs:gap-6'>
+                            {
+                              [1,2,3,4,5,6].map(item => (
+                            <Link key={item} href={'/project/test'} className='basis-[33.333333%] px-1 py-1 xs:basis-1'>
+                              <img loading='lazy' className='object-cover' src={`Gallery/${item}.png`}/>
+                            </Link>
+                              ))
+                            }
+                          </div>
+                      </TabPanel>
+                      <TabPanel sx={{padding: ' 12px 0'}} value="3">
+                          <div className='flex flex-wrap xs:flex-col xs:gap-6'>
+                            {
+                              [1,2,3,4,5,6,7,8,9].map(item => (
+                            <Link key={item} href={'/project/test'} className='basis-[33.333333%] px-1 py-1 xs:basis-1'>
+                              <img loading='lazy' className='object-cover' src={`Gallery/${item}.png`}/>
+                            </Link>
+                              ))
+                            }
+                          </div>
+                      </TabPanel>
+                      <TabPanel sx={{padding: ' 12px 0'}} value="4">
+                          <div className='flex flex-wrap xs:flex-col xs:gap-6'>
+                            {
+                              [1,2,3,4,5,6].map(item => (
+                            <Link key={item} href={'/project/test'} className='basis-[33.333333%] px-1 py-1 xs:basis-1'>
+                              <img loading='lazy' className='object-cover' src={`Gallery/${item}.png`}/>
+                            </Link>
+                              ))
+                            }
+                          </div>
+                      </TabPanel>
+                      <TabPanel sx={{padding: ' 12px 0'}} value="5">
+                          <div className='flex flex-wrap xs:flex-col xs:gap-6'>
+                            {
+                              [1,2,3,4,5,6,7,8,9].map(item => (
+                            <Link key={item} href={'/project/test'} className='basis-[33.333333%] px-1 py-1 xs:basis-1'>
+                              <img loading='lazy' className='object-cover' src={`Gallery/${item}.png`}/>
+                            </Link>
+                              ))
+                            }
+                          </div>
+                      </TabPanel>
+                      <TabPanel sx={{padding: ' 12px 0'}} value="6">
+                          <div className='flex flex-wrap xs:flex-col xs:gap-6'>
+                            {
+                              [1,2,3,4,5,6].map(item => (
+                            <Link key={item} href={'/project/test'} className='basis-[33.333333%] px-1 py-1 xs:basis-1'>
+                              <img loading='lazy' className='object-cover' src={`Gallery/${item}.png`}/>
+                            </Link>
+                              ))
+                            }
+                          </div>
+                      </TabPanel>
+                      <TabPanel sx={{padding: ' 12px 0'}} value="7">
+                          <div className='flex flex-wrap xs:flex-col xs:gap-6'>
+                            {
+                              [1,2,3,4,5,6,7,8,9].map(item => (
+                            <Link key={item} href={'/project/test'} className='basis-[33.333333%] px-1 py-1 xs:basis-1'>
+                              <img loading='lazy' className='object-cover' src={`Gallery/${item}.png`}/>
+                            </Link>
+                              ))
+                            }
+                          </div>
                       </TabPanel>
                     </TabContext>
                 </div>

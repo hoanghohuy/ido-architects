@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function ProjectPage() {
   return (
-    <div className='pt-[90px]'>
+    <div className='py-[90px]'>
         <DuAnThietKe />
     </div>
   )

@@ -11,14 +11,14 @@ export const metadata = {
         url: `${process.env.NEXT_PUBLIC_SITE_URL}/project`,
         type: 'website',
         description: 'Dự án thiết kế',
-        images: [`${process.env.NEXT_PUBLIC_SITE_URL}/evissa_thumbnail.png`],
+        images: [`${process.env.NEXT_PUBLIC_SITE_URL}/thumbnail.png`],
     },
     twitter: {
         title: 'Dự án thiết kế',
         description: 'Dự án thiết kế',
         card: 'summary',
         url: `${process.env.NEXT_PUBLIC_SITE_URL}/project`,
-        images: [`${process.env.NEXT_PUBLIC_SITE_URL}/evissa_thumbnail.png`],
+        images: [`${process.env.NEXT_PUBLIC_SITE_URL}/thumbnail.png`],
         site: '@idoarchitects',
         creator: '@idoarchitects',
     },
@@ -29,7 +29,7 @@ export default function page() {
         '@context': 'https://schema.org',
         '@type': 'article',
         name: 'News | E-vissa.com',
-        image: `${process.env.NEXT_PUBLIC_SITE_URL}/evissa_thumbnail.png`,
+        image: `${process.env.NEXT_PUBLIC_SITE_URL}/thumbnail.png`,
         description: `News | E-vissa.com`,
     };
     return (
