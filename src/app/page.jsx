@@ -1,24 +1,24 @@
 import Home from './page';
 
 export const metadata = {
-    title: 'Ido Architects',
-    description: 'Ido Architects',
+    title: 'CÔNG TY TNHH THIẾT KẾ VÀ XÂY DỰNG IDO-ARCHITECTS',
+    description: 'CÔNG TY TNHH THIẾT KẾ VÀ XÂY DỰNG IDO-ARCHITECTS',
     keywords: 'Ido Architects',
     openGraph: {
-        images: [''],
-        title: 'Ido Architects',
-        url: 'Ido Architects',
+        images: [`${process.env.NEXT_PUBLIC_SITE_URL}/thumbnail.png`],
+        title: 'CÔNG TY TNHH THIẾT KẾ VÀ XÂY DỰNG IDO-ARCHITECTS',
+        url: '/',
         type: 'website',
-        description: 'Ido Architects',
+        description: 'CÔNG TY TNHH THIẾT KẾ VÀ XÂY DỰNG IDO-ARCHITECTS',
     },
     twitter: {
         card: 'Ido Architects',
-        url: 'Ido Architects',
-        title: 'Ido Architects',
+        url: '/',
+        title: 'CÔNG TY TNHH THIẾT KẾ VÀ XÂY DỰNG IDO-ARCHITECTS',
         description: 'Ido Architects',
-        images: [''],
-        site: 'Ido Architects',
-        creator: 'Ido Architects',
+        images: [`${process.env.NEXT_PUBLIC_SITE_URL}/thumbnail.png`],
+        site: '@ido-architects',
+        creator: '@ido-architects',
     },
 };
 
@@ -26,9 +26,9 @@ export default function page() {
     const jsonLd = {
         '@context': 'https://schema.org',
         '@type': 'Organization',
-        name: `Ido Architects`,
-        image: `Ido Architects`,
-        description: `Ido Architects`,
+        name: `CÔNG TY TNHH THIẾT KẾ VÀ XÂY DỰNG IDO-ARCHITECTS`,
+        image: `${process.env.NEXT_PUBLIC_SITE_URL}/thumbnail.png`,
+        description: `CÔNG TY TNHH THIẾT KẾ VÀ XÂY DỰNG IDO-ARCHITECTS`,
     };
     return (
         <>

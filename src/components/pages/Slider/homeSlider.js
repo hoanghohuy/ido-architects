@@ -5,7 +5,7 @@ const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
     <div {...props} className='relative cursor-pointer'>
       <div className='w-[76px] h-[76px] rounded-full bg-black flex items-center justify-center absolute top-10 left-10 z-[1] xs:hidden'>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M5.41421 12.9999L21 12.9999L21 10.9999L5.41421 10.9999L11.7071 4.70703L10.2929 3.29282L1.58579 11.9999L10.2929 20.707L11.7071 19.2928L5.41421 12.9999Z" fill="#E3E2DF"/>
+          <path fillRule="evenodd" clipRule="evenodd" d="M5.41421 12.9999L21 12.9999L21 10.9999L5.41421 10.9999L11.7071 4.70703L10.2929 3.29282L1.58579 11.9999L10.2929 20.707L11.7071 19.2928L5.41421 12.9999Z" fill="#E3E2DF"/>
         </svg>
       </div>
     </div>
@@ -15,7 +15,7 @@ const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
     <div {...props} className='absolute top-0 left-12 cursor-pointer'>
       <div className='w-[76px] h-[76px] rounded-full bg-black flex items-center justify-center absolute top-10 left-20 z-[1] xs:hidden'>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M18.5858 12.9999L3 12.9999L3 10.9999L18.5858 10.9999L12.2929 4.70703L13.7071 3.29282L22.4142 11.9999L13.7071 20.707L12.2929 19.2928L18.5858 12.9999Z" fill="#E3E2DF"/>
+          <path fillRule="evenodd" clipRule="evenodd" d="M18.5858 12.9999L3 12.9999L3 10.9999L18.5858 10.9999L12.2929 4.70703L13.7071 3.29282L22.4142 11.9999L13.7071 20.707L12.2929 19.2928L18.5858 12.9999Z" fill="#E3E2DF"/>
         </svg>
       </div>
         

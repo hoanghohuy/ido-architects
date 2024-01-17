@@ -11,7 +11,7 @@ export default function Header({currentLink}) {
   return (
     <div id='header' className='w-full fixed z-[2] bg-white'>
         <div className='flex justify-between items-center px-[88px] w-full h-24 border-b-[1px] border-solid border-[#E6E5E6] lg:px-[48px] xs:px-8 '>
-            <Link href={'/'}><img src='/logo.png' alt='ido architects' loading='lazy' /></Link>
+            <Link href={'/'}><img src='/logo.svg' alt='ido architects' loading='lazy' /></Link>
             <div id='menu' className='flex gap-14 font-[15px] uppercase font-[400] lg:gap-5 md:hidden'>
                 {dataHeader.map(item => 
                     <Link href={item.link} key={item.link} className={`${currentLink == item.link && styles.active}`} >{item.title}</Link>)}

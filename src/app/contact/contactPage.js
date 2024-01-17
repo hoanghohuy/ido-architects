@@ -12,7 +12,7 @@ export default function ContactPage() {
 
   return (
     <div data-aos='fade-up' id='contact' className='pt-[90px]'>
-        <div className='w-full h-[500px] flex items-center justify-center bg-[#284752] text-white text-[160px] font-[500] lg:text-[120px] lg:px-12 md:text-[80px] sm:text-[60px] sm:h-[200px]'>
+        <div className='bg-contact bg-[100%] bg-cover w-full h-[770px] flex items-center justify-center bg-[#284752] text-white text-[160px] font-[500] lg:text-[120px] lg:px-12 lg:h-[400px] md:text-[80px] sm:text-[60px] sm:h-[300px]'>
           Liên hệ
         </div>
         <div>
@@ -28,7 +28,7 @@ export default function ContactPage() {
                 <a href='tel:0974265929'>P: 097 426 59 29</a>
               </div>
               <div className='w-[560px] h-[328px] lg:max-w-full lg:w-full'>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.920524841811!2d108.22215637579224!3d16.069613439426263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421831f429277d%3A0x126f9c6431fd0271!2zNzggQuG6oWNoIMSQ4bqxbmcsIEjhuqNpIENow6J1IDEsIEjhuqNpIENow6J1LCDEkMOgIE7hurVuZyA1NTAwMDAsIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1705368644075!5m2!1sen!2s" width="100%" height="100%" style={{border: 0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.920524841811!2d108.22215637579224!3d16.069613439426263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421831f429277d%3A0x126f9c6431fd0271!2zNzggQuG6oWNoIMSQ4bqxbmcsIEjhuqNpIENow6J1IDEsIEjhuqNpIENow6J1LCDEkMOgIE7hurVuZyA1NTAwMDAsIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1705368644075!5m2!1sen!2s" width="100%" height="100%" style={{border: 0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
           </div>

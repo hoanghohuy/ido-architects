@@ -39,7 +39,7 @@ export default function HomeC() {
                                     expandIcon={
                                         <>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.0001 19.0858V3.5H13.0001L13.0001 19.0858L19.293 12.7929L20.7072 14.2071L12.0001 22.9142L3.29297 14.2071L4.70718 12.7929L11.0001 19.0858Z" fill="#1A191A"/>
+                                                <path fillRule="evenodd" clipRule="evenodd" d="M11.0001 19.0858V3.5H13.0001L13.0001 19.0858L19.293 12.7929L20.7072 14.2071L12.0001 22.9142L3.29297 14.2071L4.70718 12.7929L11.0001 19.0858Z" fill="#1A191A"/>
                                             </svg>
                                         </>
                                     }
