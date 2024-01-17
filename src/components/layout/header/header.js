@@ -16,27 +16,28 @@ export default function Header({currentLink}) {
                 {dataHeader.map(item => 
                     <Link href={item.link} key={item.link} className={`${currentLink == item.link && styles.active}`} >{item.title}</Link>)}
             </div>
-            <div className='flex gap-8'>
+            <div className='flex gap-8 items-center'>
                 <a href='tel:0974265929' className='bg-black px-4 py-2 text-white uppercase xs:hidden'>Liên hệ tư vấn</a>
-                <button onClick={() => setShowMenu(!showMenu)} className='hidden md:block'>
+                <button onClick={() => setShowMenu(!showMenu)} className='w-5 h-5 hidden md:block'>
                   {
-                    showMenu ?
-                    <img src='/header/close.png' width={24} height={24} /> :
-                  <img src='/header/menu.svg'/>
+                    <div className={`flex flex-col ${showMenu ? 'gap-0' : 'gap-[6px]'}`}>
+                      <div className={`${showMenu ? 'w-[23px]' : 'w-5'} h-[2px] bg-black transition-all ${showMenu ? 'rotate-45' : ''}`}></div>
+                      <div className={`${showMenu ? 'w-[23px] translate-y-[-1px]' : 'w-5'} h-[2px] bg-black transition-all ${showMenu ? '-rotate-45' : ''}`}></div>
+                    </div>
                   }
                   
                   </button>
             </div>
         </div>
-        <div className={`w-full ${showMenu ? 'h-auto' : 'h-0'} overflow-hidden ${styles.menu__mobile__effect}`}>
+        <div className={`w-full ${showMenu ? 'h-auto border-b-[1px] border-solid border-[#E6E5E6]' : 'h-0'} overflow-hidden ${styles.menu__mobile__effect}`}>
           <div className='px-[90px] py-5 lg:px-[48px] xs:px-8'>
             <div id='menu' className='flex flex-col gap-14 font-[15px] uppercase font-[400] lg:gap-5'>
                 {dataHeader.map(item => 
                     <Link href={item.link} key={item.link} className={`${currentLink == item.link && styles.active}`} >{item.title}</Link>)}
             </div>
-            <div className='pt-4'>
+            {/* <div className='pt-4'>
             <a href='tel:0974265929' className='bg-black px-4 py-2 text-white uppercase'>Liên hệ tư vấn</a>
-            </div>
+            </div> */}
           </div>
         </div>
     </div>
