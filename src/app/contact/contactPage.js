@@ -1,9 +1,17 @@
+'use client';
 import { Grid } from '@mui/material'
-import React from 'react'
+import { useEffect } from 'react'
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 export default function ContactPage() {
+
+  useEffect(() => {
+    Aos.init({duration: 1000});
+  },[])
+
   return (
-    <div id='contact' className='pt-[90px]'>
+    <div data-aos='fade-up' id='contact' className='pt-[90px]'>
         <div className='w-full h-[500px] flex items-center justify-center bg-[#284752] text-white text-[160px] font-[500] lg:text-[120px] lg:px-12 md:text-[80px] sm:text-[60px] sm:h-[200px]'>
           Liên hệ
         </div>
