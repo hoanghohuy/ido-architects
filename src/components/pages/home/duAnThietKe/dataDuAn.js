@@ -9,3 +9,12 @@ export const dataDuAn = [
     {id: 8, name: 'BOP VILLA 2019 8', type: 'Biệt thự', image: 8, link: 'bop-villa-2019-8', customer: 'Mr. Nguyen Tuan'},
     {id: 9, name: 'BOP VILLA 2019 9', type: 'Nhà phố', image: 9, link: 'bop-villa-2019-9', customer: 'Mr. Minh Khang'},
 ]
+
+export const dataDanhMuc = [
+    {id: '2', name: 'Nhà phố'},
+    {id: '3', name: 'Villa'},
+    {id: '4', name: 'Biệt thự'},
+    {id: '5', name: 'Apartment'},
+    {id: '6', name: 'Coffee'},
+    {id: '7', name: 'Hotel'},
+]

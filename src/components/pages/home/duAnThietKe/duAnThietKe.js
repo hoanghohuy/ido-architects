@@ -3,7 +3,7 @@ import { Tab, Tabs } from '@mui/material'
 import { useState } from 'react'
 import { TabContext, TabPanel } from '@mui/lab';
 import Link from 'next/link';
-import { dataDuAn } from './dataDuAn';
+import { dataDanhMuc, dataDuAn } from './dataDuAn';
 
 export default function DuAnThietKe() {
 
@@ -34,12 +34,11 @@ export default function DuAnThietKe() {
                         sx={{'& .Mui-selected': {color: 'var(--primary-color)'}}}
                     >
                         <Tab sx={{ textTransform: 'none', fontFamily: 'unset'}} label="Tất cả" value="1" />
-                        <Tab sx={{ textTransform: 'none', fontFamily: 'unset'}} label="Nhà phố" value="2" />
-                        <Tab sx={{ textTransform: 'none', fontFamily: 'unset'}} label="Villa" value="3" />
-                        <Tab sx={{ textTransform: 'none', fontFamily: 'unset'}} label="Biệt thự" value="4" />
-                        <Tab sx={{ textTransform: 'none', fontFamily: 'unset'}} label="Apartment" value="5" />
-                        <Tab sx={{ textTransform: 'none', fontFamily: 'unset'}} label="Coffee" value="6" />
-                        <Tab sx={{ textTransform: 'none', fontFamily: 'unset'}} label="Hotel" value="7" />
+                        {
+                          dataDanhMuc.map(item => (
+                              <Tab key={item.id} sx={{ textTransform: 'none', fontFamily: 'unset'}} label={item.name} value={item.id}/>
+                          ))
+                        }
                     </Tabs>
                       <TabPanel sx={{padding: ' 12px 0'}} value="1" className='px-0'>
                           <div className='flex flex-wrap xs:flex-col xs:gap-6'>
