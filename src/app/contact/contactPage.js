@@ -1,4 +1,4 @@
-import { Grid, TextField } from '@mui/material'
+import { Grid } from '@mui/material'
 import React from 'react'
 
 export default function ContactPage() {
@@ -33,13 +33,13 @@ export default function ContactPage() {
             <div className='max-w-[50%] lg:max-w-full'>
               <Grid container spacing={5}>
                 <Grid item xl={6} lg={6} md={6} sm={12} xs={12}>
-                    <TextField id="standard-basic" label="Họ và tên" variant="standard" fullWidth/>
+                    <input placeholder='Họ và tên' className='w-full bg-[#F3F2F2] outline-none pb-3 border-b-[1px] border-solid border-[#696366]' label="Họ và tên" />
                 </Grid>
                 <Grid item xl={6} lg={6} md={6} sm={12} xs={12}>
-                    <TextField id="standard-basic" label="Email" variant="standard" fullWidth/>
+                    <input placeholder='Email' className='w-full bg-[#F3F2F2] outline-none pb-3 border-b-[1px] border-solid border-[#696366]' label="Email" />
                 </Grid>
                 <Grid item xl={12} lg={12} md={12} sm={12} xs={12}>
-                    <TextField id="standard-basic" label="Lời nhắn" variant="standard" fullWidth />
+                    <input placeholder='Lời nhắn' className='w-full bg-[#F3F2F2] outline-none pb-3 border-b-[1px] border-solid border-[#696366]' label="Lời nhắn" />
                 </Grid>
                 <Grid item xl={12} lg={12} md={12} sm={12} xs={12}>
                     <button className='bg-black h-12 px-4 py-3 border-none float-right text-white sm:w-full' variant="contained">Gửi cho chúng tôi</button>

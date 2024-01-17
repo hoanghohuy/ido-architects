@@ -4,16 +4,16 @@ import { ImageList, ImageListItem } from '@mui/material'
 import React, { useEffect, useState } from 'react'
 
 const data = [
-    {id: 1, link: '/project-completed/hoanthien.png'},
     {id: 2, link: '/slider/slider_example.png'},
+    {id: 5, link: '/Home/B/b2.png'},
+    {id: 1, link: '/project-completed/hoanthien.png'},
+    {id: 4, link: '/Home/B/b1.png'},
+    {id: 6, link: '/project-completed/hoanthien.png'},
+    {id: 7, link: '/slider/slider_example.png'},
+    {id: 8, link: '/Home/A/tab_example.png'},
     {id: 3, link: '/Home/A/tab_example.png'},
-    {id: 3, link: '/Home/B/b1.png'},
-    {id: 3, link: '/Home/B/b2.png'},
-    {id: 4, link: '/project-completed/hoanthien.png'},
-    {id: 5, link: '/slider/slider_example.png'},
-    {id: 6, link: '/Home/A/tab_example.png'},
-    {id: 7, link: '/Home/B/b1.png'},
-    {id: 8, link: '/Home/B/b2.png'},
+    {id: 9, link: '/Home/B/b1.png'},
+    {id: 10, link: '/Home/B/b2.png'},
 ]
 
 export default function ProjectCompletedDetail() {

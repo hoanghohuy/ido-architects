@@ -10,3 +10,7 @@
     display: block;
     background-color: var(--primary-color);
 }
+
+.menu__mobile__effect {
+    transition: 'width 0.5s';
+}

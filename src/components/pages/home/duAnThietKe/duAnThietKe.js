@@ -12,10 +12,10 @@ export default function DuAnThietKe() {
         setValue(newValue);
     };
   return (
-    <div className='pt-[88px] lg:px-12'>
-        <div className='max-w-[1152px] mx-auto xs:py-0 xs:px-8'>
+    <div className='pt-[88px] sm:pt-[40px] xl:px-[88px] lg:px-12 sm:px-8'>
+        <div className='max-w-[1152px] mx-auto xs:py-0'>
             <div className='text-center flex flex-col gap-2 xs:text-left'>
-                <div className='text-[48px] font-[400] xs:leading-none'>Các dự án đã thiết kế</div>
+                <div className='text-[48px] font-[400] xs:leading-none sm:text-[40px]'>Các dự án đã thiết kế</div>
                 <div className='text-[18px] font-[400]'>2018 - Present</div>
                 <div>
                   <TabContext value={value}>
@@ -53,7 +53,7 @@ export default function DuAnThietKe() {
                             {
                               [1,2,3,4,5,6].map(item => (
                             <Link key={item} href={'/project/test'} className='basis-[33.333333%] px-1 py-1 xs:basis-1'>
-                              <img loading='lazy' className='object-cover' src={`Gallery/${item}.png`}/>
+                              <img loading='lazy' className='object-cover w-full h-full' src={`Gallery/${item}.png`}/>
                             </Link>
                               ))
                             }
@@ -64,7 +64,7 @@ export default function DuAnThietKe() {
                             {
                               [1,2,3,4,5,6,7,8,9].map(item => (
                             <Link key={item} href={'/project/test'} className='basis-[33.333333%] px-1 py-1 xs:basis-1'>
-                              <img loading='lazy' className='object-cover' src={`Gallery/${item}.png`}/>
+                              <img loading='lazy' className='object-cover w-full h-full' src={`Gallery/${item}.png`}/>
                             </Link>
                               ))
                             }
@@ -75,7 +75,7 @@ export default function DuAnThietKe() {
                             {
                               [1,2,3,4,5,6].map(item => (
                             <Link key={item} href={'/project/test'} className='basis-[33.333333%] px-1 py-1 xs:basis-1'>
-                              <img loading='lazy' className='object-cover' src={`Gallery/${item}.png`}/>
+                              <img loading='lazy' className='object-cover w-full h-full' src={`Gallery/${item}.png`}/>
                             </Link>
                               ))
                             }
@@ -86,7 +86,7 @@ export default function DuAnThietKe() {
                             {
                               [1,2,3,4,5,6,7,8,9].map(item => (
                             <Link key={item} href={'/project/test'} className='basis-[33.333333%] px-1 py-1 xs:basis-1'>
-                              <img loading='lazy' className='object-cover' src={`Gallery/${item}.png`}/>
+                              <img loading='lazy' className='object-cover w-full h-full' src={`Gallery/${item}.png`}/>
                             </Link>
                               ))
                             }
@@ -97,7 +97,7 @@ export default function DuAnThietKe() {
                             {
                               [1,2,3,4,5,6].map(item => (
                             <Link key={item} href={'/project/test'} className='basis-[33.333333%] px-1 py-1 xs:basis-1'>
-                              <img loading='lazy' className='object-cover' src={`Gallery/${item}.png`}/>
+                              <img loading='lazy' className='object-cover w-full h-full' src={`Gallery/${item}.png`}/>
                             </Link>
                               ))
                             }
@@ -108,7 +108,7 @@ export default function DuAnThietKe() {
                             {
                               [1,2,3,4,5,6,7,8,9].map(item => (
                             <Link key={item} href={'/project/test'} className='basis-[33.333333%] px-1 py-1 xs:basis-1'>
-                              <img loading='lazy' className='object-cover' src={`Gallery/${item}.png`}/>
+                              <img loading='lazy' className='object-cover w-full h-full' src={`Gallery/${item}.png`}/>
                             </Link>
                               ))
                             }
