@@ -1,3 +1,4 @@
+import { settingsWebsites } from '@/Settings'
 import React from 'react'
 
 export default function Footer() {
@@ -8,9 +9,9 @@ export default function Footer() {
             trò chuyện về dự án của bạn. Hãy liên hệ ngay!</div>
             <div className='flex flex-col gap-6'>
             <div className='text-center flex flex-col'>
-                <div className='text-[18px] font-[500]'>L: Tầng 6, Toà nhà Danabook, 78 Bạch Đằng, Quận Hải Châu, TP Đà Nẵng.</div>
-                <a href='mailto:hoang@ido-architects.com' className='text-[18px] font-[500]'>E: hoang@ido-architects.com</a>
-                <a href='tel:0974265929' className='text-[18px] font-[500]'>P: 097 426 59 29</a>
+                <div className='text-[18px] font-[500]'>L: {settingsWebsites.address}</div>
+                <a href={`mailto:${settingsWebsites.email}`} className='text-[18px] font-[500]'>E: {settingsWebsites.email}</a>
+                <a href={`tel:${settingsWebsites.phoneTel}`} className='text-[18px] font-[500]'>P: {settingsWebsites.phone}</a>
             </div>
             <div className='text-center text-[18px] xs:text-[16px]'>@2024 idoarchitects. All rights reserved</div>
         </div>

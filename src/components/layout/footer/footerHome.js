@@ -1,3 +1,4 @@
+import { settingsWebsites } from '@/Settings'
 import React from 'react'
 
 export default function FooterHome() {
@@ -20,10 +21,10 @@ export default function FooterHome() {
                     <a href='/'>Behance</a>
                 </div>
                 <div className='flex gap-10 text-[18px] xs:flex-col xs:gap-4 xs:text-[16px]'>
-                    <div className='max-w-[50%] xs:max-w-full'>L: Tầng 6, Toà nhà Danabook, 78 Bạch Đằng, Quận Hải Châu, TP Đà Nẵng.</div>
+                    <div className='max-w-[50%] xs:max-w-full'>L: {settingsWebsites.address}</div>
                     <div className='flex flex-col'>
-                        <a href='mailto:hoang@ido-architects.com'>E: hoang@ido-architects.com</a>
-                        <a href='tel:0974265929'>P: 097 426 59 29</a>
+                        <a href={`mailto:${settingsWebsites.email}`}>E: {settingsWebsites.email}</a>
+                        <a href={`tel:${settingsWebsites.phoneTel}`}>P: {settingsWebsites.phone}</a>
                     </div>
                     <div className='hidden xs:block'>
                     @2024 idoarchitects. All rights reserved

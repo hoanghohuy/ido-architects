@@ -3,6 +3,7 @@ import { Grid } from '@mui/material'
 import { useEffect } from 'react'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import { settingsWebsites } from '@/Settings';
 
 export default function ContactPage() {
 
@@ -23,9 +24,9 @@ export default function ContactPage() {
             </div>
             <div className='min-w-[50%] flex items-center gap-14 lg:flex-col lg:min-w-full lg:items-start lg:gap-10'>
               <div className='max-w-[377px] lg:max-w-full flex flex-col'>
-                <div>L: Tầng 6, Toà nhà Danabook, 78 Bạch Đằng, Quận Hải Châu, TP Đà Nẵng.</div>
-                <a href='mailto:hoang@ido-architects.com'>E: hoang@ido-architects.com</a>
-                <a href='tel:0974265929'>P: 097 426 59 29</a>
+                <div>L: {settingsWebsites.address}</div>
+                <a href={`mailto:${settingsWebsites.email}`}>E: {settingsWebsites.email}</a>
+                <a href={`tel:${settingsWebsites.phoneTel}`}>P: {settingsWebsites.phone}</a>
               </div>
               <div className='w-[560px] h-[328px] lg:max-w-full lg:w-full'>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.920524841811!2d108.22215637579224!3d16.069613439426263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421831f429277d%3A0x126f9c6431fd0271!2zNzggQuG6oWNoIMSQ4bqxbmcsIEjhuqNpIENow6J1IDEsIEjhuqNpIENow6J1LCDEkMOgIE7hurVuZyA1NTAwMDAsIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1705368644075!5m2!1sen!2s" width="100%" height="100%" style={{border: 0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>

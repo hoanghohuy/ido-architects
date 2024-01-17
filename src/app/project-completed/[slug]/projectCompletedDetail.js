@@ -1,6 +1,8 @@
 'use client';
+import { dataProjectCompleted } from '@/components/pages/home/projectCompleted/dataProjectCompleted';
 import useWindowDimensions from '@/customHooks/useWindowDimensions';
 import { ImageList, ImageListItem } from '@mui/material'
+import { usePathname } from 'next/navigation';
 import React, { useEffect, useState } from 'react'
 
 const data = [
@@ -17,6 +19,10 @@ const data = [
 ]
 
 export default function ProjectCompletedDetail() {
+    const pathName = usePathname();
+    const [,,slug] = pathName.split('/');
+    const [dataList ,setDataList] = useState(dataProjectCompleted.find(item => item.link == slug))
+
     const { height, width } = useWindowDimensions();
     const [col, setCol] = useState(3);
     
@@ -33,17 +39,17 @@ export default function ProjectCompletedDetail() {
     <div className='pt-[90px]'>
         <div className='py-[80px] max-w-[1152px] mx-auto flex flex-col gap-10 px-12 sm:px-8 sm:py-10'>
             <div id='info' className='flex flex-col gap-4'>
-                <h1 className='text-[48px] font-[500]'>AEM Office Building</h1>
+                <h1 className='text-[48px] font-[500]'>{dataList?.name}</h1>
                 <div>
                     <div>Đi qua ngày mưa đông là ngày nắng đẹp!</div>
                     <div> &apos;Nắng + hình khối - cây xanh tạo chiều sâu bóng đổ làm tăng sự tương phản của công trình với môi trường xung quanh&apos;.</div>
                 </div>
-                <div>--------------------</div>
+                <div>—</div>
                 <div>
-                    <div>Dự án: AEM Office Building</div>
+                    <div>Dự án: {dataList?.name}</div>
                     <div>Khách hàng: Công ty TNHH MTV Aem Design</div>
                     <div>Thiết kế bởi: ido-architects</div>
-                    <div>Địa điểm: Thành phố Đà Nẵng, Việt Nam</div>
+                    <div>Địa điểm: {dataList?.place}</div>
                 </div>
             </div>
             <div id='image-detail'>
