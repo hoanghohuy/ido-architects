@@ -54,7 +54,7 @@ const settings = {
 
 export default function HomeSlider() {
   return (
-    <div id='slider'>
+    <div id='slider' data-aos="fade-right">
       <div className='px-[88px] pb-20 w-full lg:px-12 xs:px-0 xs:pb-0 '>
         <Slider {...settings} className='relative'>
           <img loading='lazy' src='/slider/slider_example.png' />

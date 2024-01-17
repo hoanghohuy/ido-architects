@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function HomeB() {
   return (
-    <div className='pt-[40px]'>
+    <div data-aos="fade-up" className='pt-[40px]'>
         <div className='w-full px-[88px] flex justify-between lg:px-12 md:flex-col md:gap-20 xs:px-8 xs:gap-8'>
             <div className='max-w-[50%] flex flex-col gap-12 md:max-w-full xs:gap-4'>
                 <div className='flex justify-between gap-20 lg:gap-10 xs:flex-col xs:gap-4'>
