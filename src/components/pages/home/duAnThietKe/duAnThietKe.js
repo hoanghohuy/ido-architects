@@ -20,10 +20,10 @@ export default function DuAnThietKe() {
                 <div className='text-[48px] font-[400] xs:leading-none sm:text-[40px]'>Các dự án đã thiết kế</div>
                 <div className='flex justify-center items-center gap-3 xs:justify-start'>
                   <div className='w-[72px] h-[1px] bg-black'></div>
-                  <div className='text-[18px] font-[400]'>2018 - Present</div>
+                  {/* <div className='text-[18px] font-[400]'>2018 - Present</div> */}
                   </div>
                 <div>
-                  <TabContext value={value} centered>
+                  {/* <TabContext value={value} centered>
                     <Tabs
                         value={value}
                         onChange={handleChangeTab}
@@ -43,9 +43,9 @@ export default function DuAnThietKe() {
                               <Tab key={item.id} sx={{ textTransform: 'none', fontFamily: 'unset'}} label={item.name} value={item.id}/>
                           ))
                         }
-                    </Tabs>
-                      <TabPanel sx={{padding: ' 12px 0'}} value="1" className='px-0'>
-                          <div className='flex flex-wrap gap-2 xs:flex-col xs:gap-6'>
+                    </Tabs> */}
+                      {/* <TabPanel sx={{padding: ' 12px 0'}} value="1" className='px-0'> */}
+                          <div className='pt-4 flex flex-wrap gap-2 xs:flex-col xs:gap-6'>
                             {
                               dataDuAn.map(item => (
                             <Link key={item.id} href={`/project/${item.link}`} className={`${styles.duan__item} basis-[32.1%] xs:basis-1`}>
@@ -59,8 +59,8 @@ export default function DuAnThietKe() {
                               ))
                             }
                           </div>
-                      </TabPanel>
-                      <TabPanel sx={{padding: ' 12px 0'}} value="2">
+                      {/* </TabPanel> */}
+                      {/* <TabPanel sx={{padding: ' 12px 0'}} value="2">
                           <div className='flex flex-wrap gap-2 xs:flex-col xs:gap-6'>
                             {
                               dataDuAn.filter(item => item.type == 'Nhà phố').map(item => (
@@ -155,8 +155,8 @@ export default function DuAnThietKe() {
                               ))
                             }
                           </div>
-                      </TabPanel>
-                    </TabContext>
+                      </TabPanel> */}
+                    {/* </TabContext> */}
                 </div>
             </div>
         </div>
