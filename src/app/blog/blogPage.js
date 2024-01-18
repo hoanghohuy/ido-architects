@@ -1,13 +1,21 @@
+'use client';
 import { dataBlog } from '@/components/pages/Blog/dataBlog'
 import DuAnThietKe from '@/components/pages/home/duAnThietKe/duAnThietKe'
 import Link from 'next/link'
-import React from 'react'
+import { useEffect } from 'react'
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 export default function BlogPage() {
+
+  useEffect(() => {
+    Aos.init({duration: 1000});
+  },[])
+
   return (
-    <div className='pt-[90px]'>
+    <div data-aos='fade-up' className='pt-[90px]'>
         <div className='py-[64px] max-w-[1400px] px-[88px] mx-auto lg:px-12 md:px-8 md:py-[40px]'>
-          <div className='pb-4'>Trang chủ /  Blog</div>
+          <div className='pb-4'>Trang chủ /  <b>Blog</b></div>
           <div className='flex flex-wrap gap-x-8 gap-y-[80px] lg:gap-y-[40px] xs:flex-col'>
             {dataBlog.map(item => (
               <Link key={item.id} href={`/blog/${item.link}`} className='flex flex-col gap-4 basis-[31%] lg:basis-[48%] md:basis-[47%] sm:basis-[46%] xs:basis-1'>
