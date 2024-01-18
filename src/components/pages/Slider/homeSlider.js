@@ -55,7 +55,7 @@ const settings = {
 export default function HomeSlider() {
   return (
     <div id='slider' data-aos="zoom-in">
-      <div className='px-[88px] pb-20 lg:px-12 xs:px-0 xs:pb-0 '>
+      <div className='px-[88px] pb-20 lg:px-12 xs:px-0 xs:pb-0'>
         <Slider {...settings} className='relative'>
           <img className='h-[740px] w-full object-cover' loading='lazy' src='/slider/slider_example.png' />
           <img className='h-[740px] w-full object-cover' loading='lazy' src='/slider/slider_example.png' />
