@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { TabContext, TabPanel } from '@mui/lab';
 import Link from 'next/link';
 import { dataDanhMuc, dataDuAn } from './dataDuAn';
+import styles from './DuAnThietKe.module.css';
 
 export default function DuAnThietKe() {
 
@@ -44,11 +45,16 @@ export default function DuAnThietKe() {
                         }
                     </Tabs>
                       <TabPanel sx={{padding: ' 12px 0'}} value="1" className='px-0'>
-                          <div className='flex flex-wrap xs:flex-col xs:gap-6'>
+                          <div className='flex flex-wrap gap-2 xs:flex-col xs:gap-6'>
                             {
                               dataDuAn.map(item => (
-                            <Link key={item.id} href={`/project/${item.link}`} className='basis-[33.333333%] px-1 py-1 xs:basis-1'>
+                            <Link key={item.id} href={`/project/${item.link}`} className={`${styles.duan__item} basis-[32.1%] xs:basis-1`}>
                               <img loading='lazy' className='object-cover w-full h-full' src={`Gallery/${item.image}.png`}/>
+                              <div className={`${styles.duan__watermask} h-full absolute top-0`}>
+                                <div className='text-[14px] font-[500] text-white'>{item.type}</div>
+                                <div className='text-[16px] font-[500] text-white'>{item.name}</div>
+                                <div className='text-[14px] font-[500] text-white'>{item.customer}</div>
+                              </div>
                             </Link>
                               ))
                             }
