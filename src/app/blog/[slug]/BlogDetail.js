@@ -14,7 +14,7 @@ export default function BlogDetail() {
         <div className='py-[64px] max-w-[1400px] px-[88px] mx-auto lg:px-12 xs:px-8'>
             <div className='w-full flex flex-col gap-6'>
                 <div><Link href={'/'}>Trang chủ</Link> / <Link href={'/blog'}>Blog</Link> / <b>{dataList.title}</b></div>
-                <img src='/Gallery/1.png' className='w-full' />
+                <img src='/slider/slider_example.png' className='w-full' />
             </div>
             <div className='pt-[64px] max-w-[1152px] mx-auto'>
                 <h2 className='text-[32px] font-[500] sm:text-[28px] xs:text-[24px]'>{dataList.title}</h2>
