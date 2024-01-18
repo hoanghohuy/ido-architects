@@ -61,66 +61,96 @@ export default function DuAnThietKe() {
                           </div>
                       </TabPanel>
                       <TabPanel sx={{padding: ' 12px 0'}} value="2">
-                          <div className='flex flex-wrap xs:flex-col xs:gap-6'>
+                          <div className='flex flex-wrap gap-2 xs:flex-col xs:gap-6'>
                             {
                               dataDuAn.filter(item => item.type == 'Nhà phố').map(item => (
-                            <Link key={item.id} href={`/project/${item.link}`} className='basis-[33.333333%] px-1 py-1 xs:basis-1'>
+                            <Link key={item.id} href={`/project/${item.link}`} className={`${styles.duan__item} basis-[32.1%] xs:basis-1`}>
                               <img loading='lazy' className='object-cover w-full h-full' src={`Gallery/${item.image}.png`}/>
+                              <div className={`${styles.duan__watermask} h-full absolute top-0`}>
+                                <div className='text-[14px] font-[500] text-white'>{item.type}</div>
+                                <div className='text-[16px] font-[500] text-white'>{item.name}</div>
+                                <div className='text-[14px] font-[500] text-white'>{item.customer}</div>
+                              </div>
                             </Link>
                               ))
                             }
                           </div>
                       </TabPanel>
                       <TabPanel sx={{padding: ' 12px 0'}} value="3">
-                          <div className='flex flex-wrap xs:flex-col xs:gap-6'>
+                          <div className='flex flex-wrap gap-2 xs:flex-col xs:gap-6'>
                             {
                               dataDuAn.filter(item => item.type == 'Villa').map(item => (
-                            <Link key={item.id} href={`/project/${item.link}`} className='basis-[33.333333%] px-1 py-1 xs:basis-1'>
+                            <Link key={item.id} href={`/project/${item.link}`} className={`${styles.duan__item} basis-[32.1%] xs:basis-1`}>
                               <img loading='lazy' className='object-cover w-full h-full' src={`Gallery/${item.image}.png`}/>
+                              <div className={`${styles.duan__watermask} h-full absolute top-0`}>
+                                <div className='text-[14px] font-[500] text-white'>{item.type}</div>
+                                <div className='text-[16px] font-[500] text-white'>{item.name}</div>
+                                <div className='text-[14px] font-[500] text-white'>{item.customer}</div>
+                              </div>
                             </Link>
                               ))
                             }
                           </div>
                       </TabPanel>
                       <TabPanel sx={{padding: ' 12px 0'}} value="4">
-                          <div className='flex flex-wrap xs:flex-col xs:gap-6'>
+                          <div className='flex flex-wrap gap-2 xs:flex-col xs:gap-6'>
                             {
                               dataDuAn.filter(item => item.type == 'Biệt thự').map(item => (
-                            <Link key={item.id} href={`/project/${item.link}`} className='basis-[33.333333%] px-1 py-1 xs:basis-1'>
+                            <Link key={item.id} href={`/project/${item.link}`} className={`${styles.duan__item} basis-[32.1%] xs:basis-1`}>
                               <img loading='lazy' className='object-cover w-full h-full' src={`Gallery/${item.image}.png`}/>
+                              <div className={`${styles.duan__watermask} h-full absolute top-0`}>
+                                <div className='text-[14px] font-[500] text-white'>{item.type}</div>
+                                <div className='text-[16px] font-[500] text-white'>{item.name}</div>
+                                <div className='text-[14px] font-[500] text-white'>{item.customer}</div>
+                              </div>
                             </Link>
                               ))
                             }
                           </div>
                       </TabPanel>
                       <TabPanel sx={{padding: ' 12px 0'}} value="5">
-                          <div className='flex flex-wrap xs:flex-col xs:gap-6'>
+                          <div className='flex flex-wrap gap-2 xs:flex-col xs:gap-6'>
                             {
                               dataDuAn.filter(item => item.type == 'Apartment').map(item => (
-                            <Link key={item.id} href={`/project/${item.link}`} className='basis-[33.333333%] px-1 py-1 xs:basis-1'>
+                            <Link key={item.id} href={`/project/${item.link}`} className={`${styles.duan__item} basis-[32.1%] xs:basis-1`}>
                               <img loading='lazy' className='object-cover w-full h-full' src={`Gallery/${item.image}.png`}/>
+                              <div className={`${styles.duan__watermask} h-full absolute top-0`}>
+                                <div className='text-[14px] font-[500] text-white'>{item.type}</div>
+                                <div className='text-[16px] font-[500] text-white'>{item.name}</div>
+                                <div className='text-[14px] font-[500] text-white'>{item.customer}</div>
+                              </div>
                             </Link>
                               ))
                             }
                           </div>
                       </TabPanel>
                       <TabPanel sx={{padding: ' 12px 0'}} value="6">
-                          <div className='flex flex-wrap xs:flex-col xs:gap-6'>
+                          <div className='flex flex-wrap gap-2 xs:flex-col xs:gap-6'>
                             {
                               dataDuAn.filter(item => item.type == 'Coffee').map(item => (
-                            <Link key={item.id} href={`/project/${item.link}`} className='basis-[33.333333%] px-1 py-1 xs:basis-1'>
+                            <Link key={item.id} href={`/project/${item.link}`} className={`${styles.duan__item} basis-[32.1%] xs:basis-1`}>
                               <img loading='lazy' className='object-cover w-full h-full' src={`Gallery/${item.image}.png`}/>
+                              <div className={`${styles.duan__watermask} h-full absolute top-0`}>
+                                <div className='text-[14px] font-[500] text-white'>{item.type}</div>
+                                <div className='text-[16px] font-[500] text-white'>{item.name}</div>
+                                <div className='text-[14px] font-[500] text-white'>{item.customer}</div>
+                              </div>
                             </Link>
                               ))
                             }
                           </div>
                       </TabPanel>
                       <TabPanel sx={{padding: ' 12px 0'}} value="7">
-                          <div className='flex flex-wrap xs:flex-col xs:gap-6'>
+                          <div className='flex flex-wrap gap-2 xs:flex-col xs:gap-6'>
                             {
                               dataDuAn.filter(item => item.type == 'Hotel').map(item => (
-                            <Link key={item.id} href={`/project/${item.link}`} className='basis-[33.333333%] px-1 py-1 xs:basis-1'>
+                            <Link key={item.id} href={`/project/${item.link}`} className={`${styles.duan__item} basis-[32.1%] xs:basis-1`}>
                               <img loading='lazy' className='object-cover w-full h-full' src={`Gallery/${item.image}.png`}/>
+                              <div className={`${styles.duan__watermask} h-full absolute top-0`}>
+                                <div className='text-[14px] font-[500] text-white'>{item.type}</div>
+                                <div className='text-[16px] font-[500] text-white'>{item.name}</div>
+                                <div className='text-[14px] font-[500] text-white'>{item.customer}</div>
+                              </div>
                             </Link>
                               ))
                             }
