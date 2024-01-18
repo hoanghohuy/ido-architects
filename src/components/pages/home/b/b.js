@@ -4,7 +4,7 @@ export default function HomeB() {
   return (
     <div data-aos="fade-up" className='pt-[40px]'>
         <div className='w-full px-[88px] flex justify-between lg:px-12 md:flex-col md:gap-20 xs:px-8 xs:gap-8'>
-            <div className='max-w-[50%] flex flex-col gap-12 md:max-w-full xs:gap-4'>
+            <div data-aos='fade-up-right' className='max-w-[50%] flex flex-col gap-12 md:max-w-full xs:gap-4'>
                 <div className='flex justify-between gap-20 lg:gap-10 xs:flex-col xs:gap-4'>
                     <div className='text-[64px] text-primary font-[500] min-w-[40%]  leading-[64px] xl:text-[48px] lg:text-[40px] lg:leading-10'>
                         IDO<br/>
@@ -16,7 +16,7 @@ export default function HomeB() {
                 </div>
                 <img src='/Home/B/b1.png' loading='lazy' className='w-full' />
             </div>
-            <div className='max-w-[30%] flex flex-col gap-12 md:max-w-full xs:gap-4'>
+            <div data-aos='fade-up-left' className='max-w-[30%] flex flex-col gap-12 md:max-w-full xs:gap-4'>
                 <div>
                     IDO Architects xác định mỗi công trình luôn là sự gắn kết hài hòa giữa lợi ích của Chủ đầu tư, giá trị nhân văn, thẩm mỹ, tính bền vững và hơn hết là sự thăng hoa giữa nghệ thuật và công nghệ tiên tiến.
                 </div>
