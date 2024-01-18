@@ -25,9 +25,9 @@ export default function Home() {
   return (
     <main>
       <Header currentLink={pathName}/>
-      <div className='main pt-[88px]'>
-        <div className='bg-pattern bg-[100%] bg-cover w-full'>
-          <div id='info'>
+      <div className='main pt-[90px]'>
+        <div className='bg-pattern bg-cover w-full pt-14'>
+          {/* <div id='info'>
             <div className='px-[88px] py-[56px] flex items-center justify-between lg:px-[48px] md:flex-col xs:px-8 xs:py-8'>
               <div className='max-w-[60%] md:max-w-full'>
                 <div data-aos='fade-right' className='text-[54px] font-[400] xl:text-[35px] lg:text-[30px] xs:text-[14px]'>CÔNG TY TNHH THIẾT KẾ VÀ XÂY DỰNG</div>
@@ -42,7 +42,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           <HomeSlider />
         </div>
         <Divider char={'A'} />

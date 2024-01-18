@@ -14,12 +14,12 @@ export default function DuAnThietKe() {
         setValue(newValue);
     };
   return (
-    <div data-aos="zoom-in-down" className='pt-[88px] pb-8 sm:pt-[40px] xl:px-[88px] lg:px-12 sm:px-8'>
+    <div data-aos="zoom-in-down" className='pt-[80px] pb-8 sm:pt-[40px] xl:px-[88px] lg:px-12 sm:px-8'>
         <div className='max-w-[1152px] mx-auto xs:py-0'>
             <div className='text-center flex flex-col gap-2 xs:text-left'>
                 <div className='text-[48px] font-[400] xs:leading-none sm:text-[40px]'>Các dự án đã thiết kế</div>
                 <div className='flex justify-center items-center gap-3 xs:justify-start'>
-                  <div className='w-[72px] h-[1px] bg-black'></div>
+                  {/* <div className='w-[72px] h-[1px] bg-black'></div> */}
                   {/* <div className='text-[18px] font-[400]'>2018 - Present</div> */}
                   </div>
                 <div>
