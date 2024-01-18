@@ -34,7 +34,7 @@ export default function DuAnThietKe() {
                         
                         // aria-label="scrollable auto tabs example"
                         allowScrollButtonsMobile
-                        className='inline-flex sm:flex'
+                        className='!inline-flex sm:!flex'
                         sx={{'& .Mui-selected': {color: 'var(--primary-color)'}}}
                     >
                         <Tab sx={{ textTransform: 'none', fontFamily: 'unset'}} label="Tất cả" value="1" />
