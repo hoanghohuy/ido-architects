@@ -45,7 +45,7 @@ export default function Home() {
         <HomeSlider />
         <Divider char={'A'} />
         <DuAnThietKe />
-        <div className='w-[100px] mx-auto mb-[90px]'>
+        <div className='w-[100px] mx-auto mb-[60px]'>
             <Link href={'project'} className='text-center w-[100px] block'>Xem thêm</Link>
             <div className='mx-auto w-[40px] h-[2px] bg-black'></div>
         </div>
