@@ -14,10 +14,10 @@ export default function Header({currentLink}) {
             <Link href={'/'}><img src='/logo.svg' alt='ido architects' loading='lazy' /></Link>
             <div id='menu' className='flex gap-14 font-[15px] uppercase font-[500] lg:gap-5 md:hidden'>
                 {dataHeader.map(item => 
-                    <Link href={item.link} key={item.link} className={`${currentLink == item.link && styles.active}`} >{item.title}</Link>)}
+                    <Link href={item.link} key={item.link} className={`${currentLink == item.link && styles.active} hover:text-primary`} >{item.title}</Link>)}
             </div>
             <div className='flex gap-8 items-center'>
-                <a href='tel:0974265929' className='bg-black px-4 py-2 text-white uppercase xs:hidden'>Liên hệ tư vấn</a>
+                <a href='tel:0974265929' className='bg-black px-4 py-2 text-white uppercase xs:hidden hover:bg-primary'>Liên hệ tư vấn</a>
                 <button onClick={() => setShowMenu(!showMenu)} className='w-9 h-9 justify-center items-center hidden md:flex mx-auto'>
                   {
                     <div className={`flex w-full h-full flex-col items-center justify-center ${showMenu ? 'gap-0 bg-black rounded-full' : 'gap-[6px]'}`}>
