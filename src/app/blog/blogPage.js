@@ -10,7 +10,7 @@ export default function BlogPage() {
           <div className='pb-4'>Trang chủ /  Blog</div>
           <div className='flex flex-wrap gap-x-8 gap-y-[80px] lg:gap-y-[40px] xs:flex-col'>
             {dataBlog.map(item => (
-              <Link href={`/blog/${item.link}`} className='flex flex-col gap-4 basis-[31%] lg:basis-[48%] md:basis-[47%] sm:basis-[46%] xs:basis-1'>
+              <Link key={item.id} href={`/blog/${item.link}`} className='flex flex-col gap-4 basis-[31%] lg:basis-[48%] md:basis-[47%] sm:basis-[46%] xs:basis-1'>
                 <div className='relative'>
                   <img className='w-full h-auto aspect-[5/3] object-cover' src={`/Gallery/${item.id}.png`} />
                   <div className='flex flex-col justify-center items-center w-[92px] p-4 bg-black absolute top-0 left-0 sm:p-2'>
