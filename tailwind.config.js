@@ -30,6 +30,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'contact': 'url(/Contact/banner.png)',
+        'pattern': 'url(/Home/pattern.png)',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
