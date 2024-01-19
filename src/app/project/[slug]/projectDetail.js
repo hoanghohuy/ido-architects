@@ -25,6 +25,14 @@ const images = [
     original: "/Slider/slider_example.png",
     thumbnail: "/Slider/slider_example.png",
   },
+  {
+    original: "/Slider/slider_example.png",
+    thumbnail: "/Slider/slider_example.png",
+  },
+  {
+    original: "/Slider/slider_example.png",
+    thumbnail: "/Slider/slider_example.png",
+  },
 ];
 
 export default function ProjectDetail() {
@@ -59,10 +67,10 @@ export default function ProjectDetail() {
                     <div className='text-[45px] font-[500] lg:text-[36px] md:text-[26px] sm:text-[32px]'>{data?.name}</div>
                     <div>Với mong muốn của gia chủ là một ngôi nhà có không gian mở, kết nối thiên nhiên, cây xanh, hồ bơi tạo không gian sống riêng tư, gần gũi, thư giãn, nghĩ dưỡng trên khu đất đô thị điển hình có vị trí trung tâm TP. Đà Nẵng.</div>
                     <div>-------------</div>
-                    <div>Dự án: BOP Villa</div>
-                    <div>Khách hàng: {data?.customer}</div>
-                    <div>Thiết kế bởi: ido-architects</div>
-                    <div>Địa điểm: Thành phố Đà Nẵng, Việt Nam</div>
+                    <div><b>Dự án:</b> BOP Villa</div>
+                    <div><b>Khách hàng:</b> {data?.customer}</div>
+                    <div><b>Thiết kế bởi:</b> ido-architects</div>
+                    <div><b>Địa điểm:</b> Thành phố Đà Nẵng, Việt Nam</div>
                 </div>
             </div>
         </div>

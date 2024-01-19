@@ -45,11 +45,11 @@ export default function ProjectCompletedDetail() {
                     <div> &apos;Nắng + hình khối - cây xanh tạo chiều sâu bóng đổ làm tăng sự tương phản của công trình với môi trường xung quanh&apos;.</div>
                 </div>
                 <div>—</div>
-                <div>
-                    <div>Dự án: {dataList?.name}</div>
-                    <div>Khách hàng: Công ty TNHH MTV Aem Design</div>
-                    <div>Thiết kế bởi: ido-architects</div>
-                    <div>Địa điểm: {dataList?.place}</div>
+                <div className='flex flex-col gap-2'>
+                    <div><b>Dự án:</b> {dataList?.name}</div>
+                    <div><b>Khách hàng:</b> Công ty TNHH MTV Aem Design</div>
+                    <div><b>Thiết kế bởi:</b> ido-architects</div>
+                    <div><b>Địa điểm:</b> {dataList?.place}</div>
                 </div>
             </div>
             <div id='image-detail'>

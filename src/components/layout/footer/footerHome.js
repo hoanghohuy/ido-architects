@@ -5,9 +5,9 @@ export default function FooterHome() {
   return (
     <footer data-aos="fade-down">
         <div className='px-[88px] py-10 flex justify-between lg:px-12 lg:flex-col lg:gap-12 xs:px-8 xs:gap-8'>
-            <div className='max-w-[560px] flex flex-col gap-6 lg:max-w-full'>
+            <div className='max-w-[540px] flex flex-col gap-6 lg:max-w-full xl:max-w-[480px]'>
                 <div className='text-[38px] text-primary font-[500] leading-[40px] xs:text-[27px]'>
-                    Chúng tôi luôn sẵn lòng
+                    <div>Chúng tôi luôn sẵn lòng</div>
                     trò chuyện về dự án của bạn. Hãy liên hệ ngay
                 </div>
                 <div className='block xs:hidden'>
