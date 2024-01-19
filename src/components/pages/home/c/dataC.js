@@ -15,7 +15,7 @@ export const dataC = [
         id: '03',
         text: 'Thi công',
         content:
-           'Chúng tôi không chỉ đơn thuần là những chuyên gia tư vấn, mà còn là đối tác chiến lược đồng hành với khách hàng. Tư vấn của chúng tôi không chỉ giúp hình thành ý tưởng mà còn xác định chiến lược và hướng phát triển chi tiết cho mọi dự án.'
+           'Chúng tôi đặt mọi sự chú ý vào việc triển khai dự án một cách chính xác và hiệu quả. Qua từng công đoạn, chúng tôi đảm bảo sự chất lượng và tính thẩm mỹ của từng chi tiết, tạo ra không gian sống đẹp mắt và chất lượng.'
     },
     {
         id: '04',
