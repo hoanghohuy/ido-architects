@@ -50,7 +50,7 @@ export default function ProjectDetail() {
                 <div className='flex flex-wrap max-w-[60%] md:max-w-full sm:flex-col sm:w-full sm:gap-4'>
                     {[0,1,2,3,4,5].map(item => (
                     <div key={item} onClick={handleShowImage} className='w-full basis-[33.333%] p-1 aspect-[4/3] sm:basis-1 cursor-pointer'>
-                        <img className='w-full h-full object-cover aspect-[4/3]' src='/Slider/slider_example.png' />
+                        <img className='w-full h-full object-cover aspect-[4/3]' src='/slider/slider_example.png' />
                     </div>
                     ))}
                 </div>
