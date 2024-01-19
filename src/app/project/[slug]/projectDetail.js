@@ -4,26 +4,21 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React, { useEffect, useState } from 'react'
 import Swal from 'sweetalert2';
-import Lightbox from 'react-image-lightbox';
-import 'react-image-lightbox/style.css';
 
 export default function ProjectDetail() {
     const pathName = usePathname();
     const [,,slug] = pathName.split('/');
+    console.log({slug});
     const [data ,setData] = useState(dataDuAn.find(item => item.link == slug))
-    const [isOpen, setOpen] = useState(false);
-    const [photoIndex, setPhotoIndex] = useState(1);
+    console.log(data);
     const handleShowImage = (url) => {
-        setOpen(true);
-        // Swal.fire({
-        // imageUrl: `${url}`,
-        // showConfirmButton: false
-        // });
-        
+        Swal.fire({
+        imageUrl: `${url}`,
+        showConfirmButton: false
+        });
     }
 
   return (
-    <>
     <div className='pt-[90px]'>
         <div className='max-w-[1400px] px-12 py-[64px] mx-auto pt-[64px] flex flex-col gap-6 sm:px-8'>
             <div className='breadcrumb'>
@@ -49,25 +44,6 @@ export default function ProjectDetail() {
             </div>
         </div>
     </div>
-    {isOpen && (
-        <Lightbox
-        mainSrc={`/Gallery/${dataDuAn[photoIndex]?.image}.png`}
-        nextSrc={`/Gallery/${dataDuAn[(photoIndex + 1) % dataDuAn.length]?.image}.png`}
-        prevSrc={`/Gallery/${dataDuAn[(photoIndex + dataDuAn.length - 1) % dataDuAn.length]?.image}.png`}
-        onCloseRequest={() => setOpen(false)}
-        onMovePrevRequest={() =>
-            setPhotoIndex({
-            photoIndex: (photoIndex + dataDuAn.length - 1) % dataDuAn.length,
-            })
-        }
-        onMoveNextRequest={() =>
-            setPhotoIndex({
-            photoIndex: (photoIndex + 1) % dataDuAn.length,
-            })
-        }
-        />
-    )}
-    </>
     
   )
 }
