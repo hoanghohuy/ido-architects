@@ -26,7 +26,7 @@ export default function Home() {
     <main>
       <Header currentLink={pathName}/>
       <div className='main pt-[90px] overflow-hidden'>
-        <div className='bg-pattern bg-cover bg-[100%] bg-no-repeat w-full pt-14'>
+        <div className='bg-pattern bg-cover bg-[100%] bg-no-repeat w-full pt-14 sm:pt-8'>
           {/* <div id='info'>
             <div className='px-[88px] py-[56px] flex items-center justify-between lg:px-[48px] md:flex-col xs:px-8 xs:py-8'>
               <div className='max-w-[60%] md:max-w-full'>
